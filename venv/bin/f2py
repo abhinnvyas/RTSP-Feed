@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/home/abhinnvyas/Desktop/Data Drive/3PX Vision Private Limited/RTSP Feed/venv/bin/python3" "$0" "$@"
-' '''
+#!/home/panther/Projects/RTSP-Feed/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
