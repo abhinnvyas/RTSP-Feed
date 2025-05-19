@@ -1,8 +1,8 @@
 import cv2
 
 # Replace with your actual RTSP URL
-# rtsp_url = "rtsp://admin:123456Ai@192.168.1.29:554/snl/live/1/1"  # This path may vary
-rtsp_url = "rtsp://192.168.144.25:8554/main.264"
+rtsp_url = "rtsp://admin:123456Ai@192.168.1.73:554/snl/live/1/1"  # This path may vary
+# rtsp_url = "rtsp://192.168.144.25:8554/main.264"
 # Open the stream
 cap = cv2.VideoCapture(rtsp_url)
 
