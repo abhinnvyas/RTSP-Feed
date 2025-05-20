@@ -1,0 +1,7 @@
+1. gst-launch-1.0 rtspsrc location=rtsp://admin:123456Ai@192.168.1.73:554/snl/live/1/1 protocols=tcp latency=200 ! decodebin ! fakesink -v
+
+2. gst-launch-1.0 rtspsrc location=rtsp://admin:123456Ai@192.168.1.73:554/snl/live/1/1 protocols=tcp latency=200 ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink
+
+3. gst-inspect-1.0 hailonet
+
+4. gst-inspect-1.0 videoconvert
