@@ -1,7 +1,463 @@
 1. gst-launch-1.0 rtspsrc location=rtsp://admin:123456Ai@192.168.1.73:554/snl/live/1/1 protocols=tcp latency=200 ! decodebin ! fakesink -v
 
+Setting pipeline to PAUSED ...
+Pipeline is live and does not need PREROLL ...
+Progress: (open) Opening Stream
+Pipeline is PREROLLED ...
+Prerolled, waiting for progress to finish...
+Progress: (connect) Connecting to rtsp://admin:123456Ai@192.168.1.73:554/snl/live/1/1
+Progress: (open) Retrieving server options
+Progress: (open) Retrieving media info
+Progress: (request) SETUP stream 0
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: latency = 200
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: ntp-sync = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: rfc7273-sync = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: add-reference-timestamp-meta = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: ntp-time-source = ntp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: drop-on-latency = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: max-rtcp-rtp-time-diff = 1000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: max-ts-offset-adjustment = 0
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: buffer-mode = slave
+Progress: (request) SETUP stream 1
+Progress: (request) SETUP stream 2
+Progress: (open) Opened Stream
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager: buffer-mode = slave
+Progress: (request) Sending PLAY request
+Progress: (request) Sending PLAY request
+Progress: (request) Sent PLAY request
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtp_sink_0.GstProxyPad:proxypad1: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession0.GstPad:recv_rtp_src: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpStorage:rtpstorage0.GstPad:src: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux0.GstPad:sink: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpStorage:rtpstorage0.GstPad:sink: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession0.GstPad:recv_rtp_sink: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtp_sink_0: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtcp_sink_0.GstProxyPad:proxypad2: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession0.GstPad:sync_src: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux0.GstPad:rtcp_sink: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession0.GstPad:recv_rtcp_sink: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtcp_sink_0: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtp_sink_1.GstProxyPad:proxypad4: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession1.GstPad:recv_rtp_src: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpStorage:rtpstorage1.GstPad:src: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux1.GstPad:sink: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpStorage:rtpstorage1.GstPad:sink: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession1.GstPad:recv_rtp_sink: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtp_sink_1: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtcp_sink_1.GstProxyPad:proxypad5: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession1.GstPad:sync_src: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux1.GstPad:rtcp_sink: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession1.GstPad:recv_rtcp_sink: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtcp_sink_1: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtp_sink_2.GstProxyPad:proxypad7: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession2.GstPad:recv_rtp_src: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpStorage:rtpstorage2.GstPad:src: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux2.GstPad:sink: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpStorage:rtpstorage2.GstPad:sink: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession2.GstPad:recv_rtp_sink: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtp_sink_2: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtcp_sink_2.GstProxyPad:proxypad8: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession2.GstPad:sync_src: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux2.GstPad:rtcp_sink: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession2.GstPad:recv_rtcp_sink: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtcp_sink_2: caps = application/x-rtcp
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession0: stats = application/x-rtp-session-stats, rtx-drop-count=(uint)0, sent-nack-count=(uint)0, recv-nack-count=(uint)0, source-stats=(GValueArray)< "application/x-rtp-source-stats\,\ ssrc\=\(uint\)2614813419\,\ internal\=\(boolean\)false\,\ validated\=\(boolean\)true\,\ received-bye\=\(boolean\)false\,\ is-csrc\=\(boolean\)false\,\ is-sender\=\(boolean\)true\,\ seqnum-base\=\(int\)-1\,\ clock-rate\=\(int\)-1\,\ octets-sent\=\(guint64\)0\,\ packets-sent\=\(guint64\)0\,\ octets-received\=\(guint64\)0\,\ packets-received\=\(guint64\)0\,\ bytes-received\=\(guint64\)0\,\ bitrate\=\(guint64\)0\,\ packets-lost\=\(int\)0\,\ jitter\=\(uint\)0\,\ sent-pli-count\=\(uint\)0\,\ recv-pli-count\=\(uint\)0\,\ sent-fir-count\=\(uint\)0\,\ recv-fir-count\=\(uint\)0\,\ sent-nack-count\=\(uint\)0\,\ recv-nack-count\=\(uint\)0\,\ recv-packet-rate\=\(uint\)0\,\ have-sr\=\(boolean\)true\,\ sr-ntptime\=\(guint64\)16806343316672030718\,\ sr-rtptime\=\(uint\)715269\,\ sr-octet-count\=\(uint\)0\,\ sr-packet-count\=\(uint\)0\,\ sent-rb\=\(boolean\)false\,\ sent-rb-fractionlost\=\(uint\)0\,\ sent-rb-packetslost\=\(int\)0\,\ sent-rb-exthighestseq\=\(uint\)0\,\ sent-rb-jitter\=\(uint\)0\,\ sent-rb-lsr\=\(uint\)0\,\ sent-rb-dlsr\=\(uint\)0\,\ have-rb\=\(boolean\)false\,\ rb-ssrc\=\(uint\)0\,\ rb-fractionlost\=\(uint\)0\,\ rb-packetslost\=\(int\)0\,\ rb-exthighestseq\=\(uint\)0\,\ rb-jitter\=\(uint\)0\,\ rb-lsr\=\(uint\)0\,\ rb-dlsr\=\(uint\)0\,\ rb-round-trip\=\(uint\)0\;" >, rtx-count=(uint)0, recv-rtx-req-count=(uint)0, sent-rtx-req-count=(uint)0;
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: latency = 200
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: drop-on-latency = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: do-lost = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: mode = slave
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: do-retransmission = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: max-rtcp-rtp-time-diff = 1000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: max-dropout-time = 60000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: max-misorder-time = 2000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: rfc7273-sync = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: add-reference-timestamp-meta = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: max-ts-offset-adjustment = 0
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0: sync-interval = 0
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux0.GstPad:rtcp_src_2614813419: caps = application/x-rtcp, ssrc=(uint)2614813419
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0.GstPad:sink_rtcp: caps = application/x-rtcp, ssrc=(uint)2614813419
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession1: stats = application/x-rtp-session-stats, rtx-drop-count=(uint)0, sent-nack-count=(uint)0, recv-nack-count=(uint)0, source-stats=(GValueArray)< "application/x-rtp-source-stats\,\ ssrc\=\(uint\)2614813419\,\ internal\=\(boolean\)false\,\ validated\=\(boolean\)true\,\ received-bye\=\(boolean\)false\,\ is-csrc\=\(boolean\)false\,\ is-sender\=\(boolean\)true\,\ seqnum-base\=\(int\)-1\,\ clock-rate\=\(int\)-1\,\ octets-sent\=\(guint64\)0\,\ packets-sent\=\(guint64\)0\,\ octets-received\=\(guint64\)0\,\ packets-received\=\(guint64\)0\,\ bytes-received\=\(guint64\)0\,\ bitrate\=\(guint64\)0\,\ packets-lost\=\(int\)0\,\ jitter\=\(uint\)0\,\ sent-pli-count\=\(uint\)0\,\ recv-pli-count\=\(uint\)0\,\ sent-fir-count\=\(uint\)0\,\ recv-fir-count\=\(uint\)0\,\ sent-nack-count\=\(uint\)0\,\ recv-nack-count\=\(uint\)0\,\ recv-packet-rate\=\(uint\)0\,\ have-sr\=\(boolean\)true\,\ sr-ntptime\=\(guint64\)16806343316675724390\,\ sr-rtptime\=\(uint\)715269\,\ sr-octet-count\=\(uint\)0\,\ sr-packet-count\=\(uint\)0\,\ sent-rb\=\(boolean\)false\,\ sent-rb-fractionlost\=\(uint\)0\,\ sent-rb-packetslost\=\(int\)0\,\ sent-rb-exthighestseq\=\(uint\)0\,\ sent-rb-jitter\=\(uint\)0\,\ sent-rb-lsr\=\(uint\)0\,\ sent-rb-dlsr\=\(uint\)0\,\ have-rb\=\(boolean\)false\,\ rb-ssrc\=\(uint\)0\,\ rb-fractionlost\=\(uint\)0\,\ rb-packetslost\=\(int\)0\,\ rb-exthighestseq\=\(uint\)0\,\ rb-jitter\=\(uint\)0\,\ rb-lsr\=\(uint\)0\,\ rb-dlsr\=\(uint\)0\,\ rb-round-trip\=\(uint\)0\;" >, rtx-count=(uint)0, recv-rtx-req-count=(uint)0, sent-rtx-req-count=(uint)0;
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: latency = 200
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: drop-on-latency = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: do-lost = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: mode = slave
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: do-retransmission = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: max-rtcp-rtp-time-diff = 1000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: max-dropout-time = 60000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: max-misorder-time = 2000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: rfc7273-sync = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: add-reference-timestamp-meta = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: max-ts-offset-adjustment = 0
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1: sync-interval = 0
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux1.GstPad:rtcp_src_2614813419: caps = application/x-rtcp, ssrc=(uint)2614813419
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1.GstPad:sink_rtcp: caps = application/x-rtcp, ssrc=(uint)2614813419
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSession:rtpsession2: stats = application/x-rtp-session-stats, rtx-drop-count=(uint)0, sent-nack-count=(uint)0, recv-nack-count=(uint)0, source-stats=(GValueArray)< "application/x-rtp-source-stats\,\ ssrc\=\(uint\)2614813419\,\ internal\=\(boolean\)false\,\ validated\=\(boolean\)true\,\ received-bye\=\(boolean\)false\,\ is-csrc\=\(boolean\)false\,\ is-sender\=\(boolean\)true\,\ seqnum-base\=\(int\)-1\,\ clock-rate\=\(int\)-1\,\ octets-sent\=\(guint64\)0\,\ packets-sent\=\(guint64\)0\,\ octets-received\=\(guint64\)0\,\ packets-received\=\(guint64\)0\,\ bytes-received\=\(guint64\)0\,\ bitrate\=\(guint64\)0\,\ packets-lost\=\(int\)0\,\ jitter\=\(uint\)0\,\ sent-pli-count\=\(uint\)0\,\ recv-pli-count\=\(uint\)0\,\ sent-fir-count\=\(uint\)0\,\ recv-fir-count\=\(uint\)0\,\ sent-nack-count\=\(uint\)0\,\ recv-nack-count\=\(uint\)0\,\ recv-packet-rate\=\(uint\)0\,\ have-sr\=\(boolean\)true\,\ sr-ntptime\=\(guint64\)16806343316676690757\,\ sr-rtptime\=\(uint\)715269\,\ sr-octet-count\=\(uint\)0\,\ sr-packet-count\=\(uint\)0\,\ sent-rb\=\(boolean\)false\,\ sent-rb-fractionlost\=\(uint\)0\,\ sent-rb-packetslost\=\(int\)0\,\ sent-rb-exthighestseq\=\(uint\)0\,\ sent-rb-jitter\=\(uint\)0\,\ sent-rb-lsr\=\(uint\)0\,\ sent-rb-dlsr\=\(uint\)0\,\ have-rb\=\(boolean\)false\,\ rb-ssrc\=\(uint\)0\,\ rb-fractionlost\=\(uint\)0\,\ rb-packetslost\=\(int\)0\,\ rb-exthighestseq\=\(uint\)0\,\ rb-jitter\=\(uint\)0\,\ rb-lsr\=\(uint\)0\,\ rb-dlsr\=\(uint\)0\,\ rb-round-trip\=\(uint\)0\;" >, rtx-count=(uint)0, recv-rtx-req-count=(uint)0, sent-rtx-req-count=(uint)0;
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: latency = 200
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: drop-on-latency = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: do-lost = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: mode = slave
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: do-retransmission = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: max-rtcp-rtp-time-diff = 1000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: max-dropout-time = 60000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: max-misorder-time = 2000
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: rfc7273-sync = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: add-reference-timestamp-meta = false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: max-ts-offset-adjustment = 0
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2: sync-interval = 0
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux2.GstPad:rtcp_src_2614813419: caps = application/x-rtcp, ssrc=(uint)2614813419
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2.GstPad:sink_rtcp: caps = application/x-rtcp, ssrc=(uint)2614813419
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux0.GstPad:src_2614813419: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0.GstPad:sink: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer0.GstPad:src: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpPtDemux:rtpptdemux0.GstPad:sink: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux1.GstPad:src_2614813419: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1.GstPad:sink: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer1.GstPad:src: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpPtDemux:rtpptdemux1.GstPad:sink: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0.GstGhostPad:recv_rtp_src_0_2614813419_96: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0.GstGhostPad:sink.GstProxyPad:proxypad0: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/GstTypeFindElement:typefind.GstPad:src: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0.GstGhostPad:recv_rtp_src_1_2614813419_8: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0.GstGhostPad:recv_rtp_src_1_2614813419_8.GstProxyPad:proxypad14: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtp_src_1_2614813419_8.GstProxyPad:proxypad13: caps = application/x-rtp, media=(string)audio, payload=(int)8, clock-rate=(int)8000, encoding-name=(string)PCMA, octet-align=(string)1, decode_buf=(string)400, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+Redistribute latency...
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/GstH264Parse:h264parse0.GstPad:src: caps = video/x-h264, stream-format=(string)avc, alignment=(string)au, codec_data=(buffer)01640028ffe1001567640028acd201e0089f96100004650000dbba084001000468ea8f2c, level=(string)4, profile=(string)high, width=(int)1920, height=(int)1080, framerate=(fraction)25/1, coded-picture-structure=(string)frame, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpSsrcDemux:rtpssrcdemux2.GstPad:src_2614813419: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2.GstPad:sink: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpJitterBuffer:rtpjitterbuffer2.GstPad:src: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager/GstRtpPtDemux:rtpptdemux2.GstPad:sink: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0.GstGhostPad:recv_rtp_src_2_2614813419_98: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0.GstGhostPad:recv_rtp_src_2_2614813419_98.GstProxyPad:proxypad16: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtp_src_2_2614813419_98.GstProxyPad:proxypad15: caps = application/x-rtp, media=(string)application, payload=(int)98, clock-rate=(int)90000, encoding-name=(string)VND.ONVIF.METADATA, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+Redistribute latency...
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/avdec_h264:avdec_h264-0.GstPad:sink: caps = video/x-h264, stream-format=(string)avc, alignment=(string)au, codec_data=(buffer)01640028ffe1001567640028acd201e0089f96100004650000dbba084001000468ea8f2c, level=(string)4, profile=(string)high, width=(int)1920, height=(int)1080, framerate=(fraction)25/1, coded-picture-structure=(string)frame, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/GstCapsFilter:capsfilter0.GstPad:src: caps = video/x-h264, stream-format=(string)avc, alignment=(string)au, codec_data=(buffer)01640028ffe1001567640028acd201e0089f96100004650000dbba084001000468ea8f2c, level=(string)4, profile=(string)high, width=(int)1920, height=(int)1080, framerate=(fraction)25/1, coded-picture-structure=(string)frame, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/GstCapsFilter:capsfilter0.GstPad:sink: caps = video/x-h264, stream-format=(string)avc, alignment=(string)au, codec_data=(buffer)01640028ffe1001567640028acd201e0089f96100004650000dbba084001000468ea8f2c, level=(string)4, profile=(string)high, width=(int)1920, height=(int)1080, framerate=(fraction)25/1, coded-picture-structure=(string)frame, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/GstH264Parse:h264parse0.GstPad:sink: caps = video/x-h264, stream-format=(string)avc, alignment=(string)au, codec_data=(buffer)01640028ffe1001567640028acd201e0089f96100004650000dbba084001000468ea8f2c, level=(string)4, profile=(string)high
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/GstRtpH264Depay:rtph264depay0.GstPad:src: caps = video/x-h264, stream-format=(string)avc, alignment=(string)au, codec_data=(buffer)01640028ffe1001567640028acd201e0089f96100004650000dbba084001000468ea8f2c, level=(string)4, profile=(string)high
+Redistribute latency...
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/GstRtpH264Depay:rtph264depay0.GstPad:sink: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/GstTypeFindElement:typefind.GstPad:sink: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0.GstGhostPad:sink: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0.GstGhostPad:recv_rtp_src_0_2614813419_96.GstProxyPad:proxypad11: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstRTSPSrc:rtspsrc0/GstRtpBin:manager.GstGhostPad:recv_rtp_src_0_2614813419_96.GstProxyPad:proxypad10: caps = application/x-rtp, media=(string)video, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)H264, packetization-mode=(string)1, profile-level-id=(string)640028, sprop-parameter-sets=(string)"Z2QAKKzSAeAIn5YQAARlAADbughA\,aOqPLA\=\=", a-framesize=(string)1920-1080, a-framerate=(string)25.0, a-recvonly=(string)"", ssrc=(uint)2614813419, npt-start=(guint64)0, play-speed=(double)1, play-scale=(double)1, onvif-mode=(boolean)false
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0/avdec_h264:avdec_h264-0.GstPad:src: caps = video/x-raw, format=(string)I420, width=(int)1920, height=(int)1080, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, framerate=(fraction)25/1
+/GstPipeline:pipeline0/GstFakeSink:fakesink0.GstPad:sink: caps = video/x-raw, format=(string)I420, width=(int)1920, height=(int)1080, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, framerate=(fraction)25/1
+/GstPipeline:pipeline0/GstDecodeBin:decodebin0.GstDecodePad:src_0.GstProxyPad:proxypad12: caps = video/x-raw, format=(string)I420, width=(int)1920, height=(int)1080, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, framerate=(fraction)25/1
+Redistribute latency...
+^Chandling interrupt.
+Interrupt: Stopping pipeline ...
+Execution ended after 0:00:01.136861165
+Setting pipeline to NULL ...
+Freeing pipeline ...
+
+
 2. gst-launch-1.0 rtspsrc location=rtsp://admin:123456Ai@192.168.1.73:554/snl/live/1/1 protocols=tcp latency=200 ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink
+ 
+ --- it is working
 
 3. gst-inspect-1.0 hailonet
 
+Factory Details:
+  Rank                     primary (256)
+  Long-name                hailonet element
+  Klass                    Hailo/Network
+  Description              Configure and Activate Hailo Network. Supports the "flush" signal which blocks until there are no buffers currently processesd in the element. When deactivating a hailonet during runtime (via set_property of "is-active" to False), make sure that no frames are being pushed into the hailonet, since this operation waits until there are no frames coming in.
+  Author                   Hailo Technologies Ltd. ("Hailo")
+
+Plugin Details:
+  Name                     hailo
+  Description              hailo gstreamer plugin
+  Filename                 /lib/aarch64-linux-gnu/gstreamer-1.0/libgsthailo.so
+  Version                  1.0
+  License                  unknown
+  Source module            hailo
+  Binary package           GStreamer
+  Origin URL               http://gstreamer.net/
+
+GObject
+ +----GInitiallyUnowned
+       +----GstObject
+             +----GstElement
+                   +----GstHailoNet
+
+Pad Templates:
+  SINK template: 'sink'
+    Availability: Always
+    Capabilities:
+      ANY
+  
+  SRC template: 'src'
+    Availability: Always
+    Capabilities:
+      ANY
+
+Element has no clocking capabilities.
+Element has no URI handling capabilities.
+
+Pads:
+  SINK: 'sink'
+    Pad Template: 'sink'
+  SRC: 'src'
+    Pad Template: 'src'
+
+Element Properties:
+  batch-size          : How many frame to send in one batch
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 16 Default: 0 
+  device-count        : Number of physical devices to use. Excludes device-id.
+                        flags: readable, writable
+                        Unsigned Integer. Range: 1 - 65535 Default: 0 
+  device-id           : Device ID ([<domain>]:<bus>:<device>.<func>, same as in lspci command). Excludes device-count.
+                        flags: readable, writable
+                        String. Default: ""
+force-writable      : Controls whether the element will force the input buffer to be writable. We force the input to be writable with the function gst_buffer_make_writable, which in most cases will do a shallow copy of the buffer. But in some cases (when the buffer is marked as not shared - see gst_buffer_copy documentation), it will do a deep copy.By default, the hailonet element will not force the input buffer to be writable and will raise an error when the buffer is read-only.
+                        flags: readable, writable
+                        Boolean. Default: false
+  hef-path            : Location of the HEF file to read
+                        flags: readable, writable
+                        String. Default: ""
+  input-format-type   : Input format type(auto, float32, uint16, uint8). Default value is auto.Gets values from the enum GstHailoFormatType. 
+                        flags: readable, writable
+                        Enum "GstHailoFormatTypes" Default: 0, "HAILO_FORMAT_TYPE_AUTO"
+                           (0): HAILO_FORMAT_TYPE_AUTO - auto
+                           (1): HAILO_FORMAT_TYPE_UINT8 - uint8
+                           (2): HAILO_FORMAT_TYPE_UINT16 - uint16
+                           (3): HAILO_FORMAT_TYPE_FLOAT32 - float32
+  input-from-meta     : Take network input from metadata instead of video frame.
+                        flags: readable, writable
+                        Boolean. Default: false
+  is-active           : Controls whether this element should be active. By default, the hailonet element will not be active unless it is the only one. Setting this property in combination with 'scheduling-algorithm' different than HAILO_SCHEDULING_ALGORITHM_NONE is not supported.
+                        flags: readable, writable
+                        Boolean. Default: false
+  multi-process-service: Controls wether to run HailoRT over its service. To use this property, the service should be active and scheduling-algorithm should be set. Defaults to false.
+                        flags: readable, writable
+                        Boolean. Default: false
+  name                : The name of the object
+                        flags: readable, writable
+                        String. Default: "hailonet0"
+  nms-iou-threshold   : Intersection over union overlap Threshold, used in the NMS iterative elimination process where potential duplicates of detected items are suppressed.
+                        flags: readable, writable
+                        Float. Range:               0 -               1 Default:               0 
+  nms-max-proposals-per-class: Set a limit for the maximum number of boxes per class.
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 4294967295 Default: 0 
+  nms-max-proposals-total: Set a limit for the maximum number of boxes total.
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 4294967295 Default: 0 
+  nms-score-threshold : Threshold used for filtering out candidates. Any box with score<TH is suppressed.
+                        flags: readable, writable
+                        Float. Range:               0 -               1 Default:               0 
+  no-transform        : Format will remain the same as the HW format.
+                        flags: readable, writable
+                        Boolean. Default: false
+  output-format-type  : Output format type(auto, float32, uint16, uint8). Default value is auto.Gets values from the enum GstHailoFormatType. 
+                        flags: readable, writable
+                        Enum "GstHailoFormatTypes" Default: 0, "HAILO_FORMAT_TYPE_AUTO"
+                           (0): HAILO_FORMAT_TYPE_AUTO - auto
+(1): HAILO_FORMAT_TYPE_UINT8 - uint8
+                           (2): HAILO_FORMAT_TYPE_UINT16 - uint16
+                           (3): HAILO_FORMAT_TYPE_FLOAT32 - float32
+  outputs-max-pool-size: The maximum amount of buffers to allocate for each output layer or 0 for unlimited
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 4294967295 Default: 64 
+  outputs-min-pool-size: The minimum amount of buffers to allocate for each output layer
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 4294967295 Default: 16 
+  parent              : The parent of the object
+                        flags: readable, writable
+                        Object of type "GstObject"
+  pass-through        : Controls whether the element will perform inference or simply pass buffers through. By default, the hailonet element will not be pass-through. Setting this property to true disables inference, regardless of the scheduler settings.
+                        flags: readable, writable
+                        Boolean. Default: false
+  scheduler-priority  : When the scheduler will choose the next hailonet to run, higher priority will be prioritized in the selection. Bigger number represent higher priority
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 31 Default: 16 
+  scheduler-threshold : The minimum number of send requests required before the hailonet is considered ready to get run time from the scheduler.
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 4294967295 Default: 0 
+  scheduler-timeout-ms: The maximum time period that may pass before getting run time from the scheduler, as long as at least one send request has been sent.
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 4294967295 Default: 0 
+  scheduling-algorithm: Controls the Model Scheduler algorithm of HailoRT. Gets values from the enum GstHailoSchedulingAlgorithms. Using Model Scheduler algorithm different than HAILO_SCHEDULING_ALGORITHM_NONE, excludes the property 'is-active'. When using the same VDevice across multiple hailonets, all should have the same 'scheduling-algorithm'. 
+                        flags: readable, writable
+                        Enum "GstHailoSchedulingAlgorithms" Default: 1, "HAILO_SCHEDULING_ALGORITHM_ROUND_ROBIN"
+                           (0): HAILO_SCHEDULING_ALGORITHM_NONE - Scheduler is not active
+                           (1): HAILO_SCHEDULING_ALGORITHM_ROUND_ROBIN - Round robin
+  vdevice-group-id    : Used to share VDevices across different hailonet instances
+                        flags: readable, writable
+                        String. Default: ""
+
+Element Actions:
+  "flush" :  void user_function (GstElement* object);
+(END)
+
+
+
+
 4. gst-inspect-1.0 videoconvert
+
+Factory Details:
+  Rank                     marginal (64)
+  Long-name                Video colorspace converter
+  Klass                    Filter/Converter/Video/Colorspace
+  Description              Converts video from one colorspace to another
+  Author                   Wim Taymans <wim.taymans@gmail.com>
+  Documentation            https://gstreamer.freedesktop.org/documentation/videoconvertscale/videoconvert.html
+
+Plugin Details:
+  Name                     videoconvertscale
+  Description              Convert video colorspaces and resizes video frames
+  Filename                 /lib/aarch64-linux-gnu/gstreamer-1.0/libgstvideoconvertscale.so
+  Version                  1.22.0
+  License                  LGPL
+  Source module            gst-plugins-base
+  Documentation            https://gstreamer.freedesktop.org/documentation/videoconvertscale/
+  Source release date      2023-01-23
+  Binary package           GStreamer Base Plugins (Debian)
+  Origin URL               https://tracker.debian.org/pkg/gst-plugins-base1.0
+
+GObject
+ +----GInitiallyUnowned
+       +----GstObject
+             +----GstElement
+                   +----GstBaseTransform
+                         +----GstVideoFilter
+                               +----GstVideoConvertScale
+                                     +----GstVideoConvert
+
+Pad Templates:
+  SINK template: 'sink'
+    Availability: Always
+    Capabilities:
+      video/x-raw
+                 format: { (string)ABGR64_LE, (string)BGRA64_LE, (string)AYUV64, (string)ARGB64_LE, (string)ARGB64, (string)RGBA64_LE, (string)ABGR64_BE, (string)BGRA64_BE, (string)ARGB64_BE, (string)RGBA64_BE, (string)GBRA_12LE, (string)GBRA_12BE, (string)Y412_LE, (string)Y412_BE, (string)A444_10LE, (string)GBRA_10LE, (string)A444_10BE, (string)GBRA_10BE, (string)A422_10LE, (string)A422_10BE, (string)A420_10LE, (string)A420_10BE, (string)RGB10A2_LE, (string)BGR10A2_LE, (string)Y410, (string)GBRA, (string)ABGR, (string)VUYA, (string)BGRA, (string)AYUV, (string)ARGB, (string)RGBA, (string)A420, (string)AV12, (string)Y444_16LE, (string)Y444_16BE, (string)v216, (string)P016_LE, (string)P016_BE, (string)Y444_12LE, (string)GBR_12LE, (string)Y444_12BE, (string)GBR_12BE, (string)I422_12LE, (string)I422_12BE, (string)Y212_LE, (string)Y212_BE, (string)I420_12LE, (string)I420_12BE, (string)P012_LE, (string)P012_BE, (string)Y444_10LE, (string)GBR_10LE, (string)Y444_10BE, (string)GBR_10BE, (string)r210, (string)I422_10LE, (string)I422_10BE, (string)NV16_10LE32, (string)Y210, (string)v210, (string)UYVP, (string)I420_10LE, (string)I420_10BE, (string)P010_10LE, (string)NV12_10LE32, (string)NV12_10LE40, (string)P010_10BE, (string)NV12_10BE_8L128, (string)Y444, (string)RGBP, (string)GBR, (string)BGRP, (string)NV24, (string)xBGR, (string)BGRx, (string)xRGB, (string)RGBx, (string)BGR, (string)IYU2, (string)v308, (string)RGB, (string)Y42B, (string)NV61, (string)NV16, (string)VYUY, (string)UYVY, (string)YVYU, (string)YUY2, (string)I420, (string)YV12, (string)NV21, (string)NV12, (string)NV12_8L128, (string)NV12_64Z32, (string)NV12_4L4, (string)NV12_32L32, (string)NV12_16L32S, (string)Y41B, (string)IYU1, (string)YVU9, (string)YUV9, (string)RGB16, (string)BGR16, (string)RGB15, (string)BGR15, (string)RGB8P, (string)GRAY16_LE, (string)GRAY16_BE, (string)GRAY10_LE32, (string)GRAY8 }
+                  width: [ 1, 32767 ]
+                 height: [ 1, 32767 ]
+              framerate: [ 0/1, 2147483647/1 ]
+       video/x-raw(ANY)
+                 format: { (string)ABGR64_LE, (string)BGRA64_LE, (string)AYUV64, (string)ARGB64_LE, (string)ARGB64, (string)RGBA64_LE, (string)ABGR64_BE, (string)BGRA64_BE, (string)ARGB64_BE, (string)RGBA64_BE, (string)GBRA_12LE, (string)GBRA_12BE, (string)Y412_LE, (string)Y412_BE, (string)A444_10LE, (string)GBRA_10LE, (string)A444_10BE, (string)GBRA_10BE, (string)A422_10LE, (string)A422_10BE, (string)A420_10LE, (string)A420_10BE, (string)RGB10A2_LE, (string)BGR10A2_LE, (string)Y410, (string)GBRA, (string)ABGR, (string)VUYA, (string)BGRA, (string)AYUV, (string)ARGB, (string)RGBA, (string)A420, (string)AV12, (string)Y444_16LE, (string)Y444_16BE, (string)v216, (string)P016_LE, (string)P016_BE, (string)Y444_12LE, (string)GBR_12LE, (string)Y444_12BE, (string)GBR_12BE, (string)I422_12LE, (string)I422_12BE, (string)Y212_LE, (string)Y212_BE, (string)I420_12LE, (string)I420_12BE, (string)P012_LE, (string)P012_BE, (string)Y444_10LE, (string)GBR_10LE, (string)Y444_10BE, (string)GBR_10BE, (string)r210, (string)I422_10LE, (string)I422_10BE, (string)NV16_10LE32, (string)Y210, (string)v210, (string)UYVP, (string)I420_10LE, (string)I420_10BE, (string)P010_10LE, (string)NV12_10LE32, (string)NV12_10LE40, (string)P010_10BE, (string)NV12_10BE_8L128, (string)Y444, (string)RGBP, (string)GBR, (string)BGRP, (string)NV24, (string)xBGR, (string)BGRx, (string)xRGB, (string)RGBx, (string)BGR, (string)IYU2, (string)v308, (string)RGB, (string)Y42B, (string)NV61, (string)NV16, (string)VYUY, (string)UYVY, (string)YVYU, (string)YUY2, (string)I420, (string)YV12, (string)NV21, (string)NV12, (string)NV12_8L128, (string)NV12_64Z32, (string)NV12_4L4, (string)NV12_32L32, (string)NV12_16L32S, (string)Y41B, (string)IYU1, (string)YVU9, (string)YUV9, (string)RGB16, (string)BGR16, (string)RGB15, (string)BGR15, (string)RGB8P, (string)GRAY16_LE, (string)GRAY16_BE, (string)GRAY10_LE32, (string)GRAY8 }
+                  width: [ 1, 32767 ]
+                 height: [ 1, 32767 ]
+              framerate: [ 0/1, 2147483647/1 ]
+  
+  SRC template: 'src'
+    Availability: Always
+    Capabilities:
+      video/x-raw
+                 format: { (string)ABGR64_LE, (string)BGRA64_LE, (string)AYUV64, (string)ARGB64_LE, (string)ARGB64, (string)RGBA64_LE, (string)ABGR64_BE, (string)BGRA64_BE, (string)ARGB64_BE, (string)RGBA64_BE, (string)GBRA_12LE, (string)GBRA_12BE, (string)Y412_LE, (string)Y412_BE, (string)A444_10LE, (string)GBRA_10LE, (string)A444_10BE, (string)GBRA_10BE, (string)A422_10LE, (string)A422_10BE, (string)A420_10LE, (string)A420_10BE, (string)RGB10A2_LE, (string)BGR10A2_LE, (string)Y410, (string)GBRA, (string)ABGR, (string)VUYA, (string)BGRA, (string)AYUV, (string)ARGB, (string)RGBA, (string)A420, (string)AV12, (string)Y444_16LE, (string)Y444_16BE, (string)v216, (string)P016_LE, (string)P016_BE, (string)Y444_12LE, (string)GBR_12LE, (string)Y444_12BE, (string)GBR_12BE, (string)I422_12LE, (string)I422_12BE, (string)Y212_LE, (string)Y212_BE, (string)I420_12LE, (string)I420_12BE, (string)P012_LE, (string)P012_BE, (string)Y444_10LE, (string)GBR_10LE, (string)Y444_10BE, (string)GBR_10BE, (string)r210, (string)I422_10LE, (string)I422_10BE, (string)NV16_10LE32, (string)Y210, (string)v210, (string)UYVP, (string)I420_10LE, (string)I420_10BE, (string)P010_10LE, (string)NV12_10LE32, (string)NV12_10LE40, (string)P010_10BE, (string)NV12_10BE_8L128, (string)Y444, (string)RGBP, (string)GBR, (string)BGRP, (string)NV24, (string)xBGR, (string)BGRx, (string)xRGB, (string)RGBx, (string)BGR, (string)IYU2, (string)v308, (string)RGB, (string)Y42B, (string)NV61, (string)NV16, (string)VYUY, (string)UYVY, (string)YVYU, (string)YUY2, (string)I420, (string)YV12, (string)NV21, (string)NV12, (string)NV12_8L128, (string)NV12_64Z32, (string)NV12_4L4, (string)NV12_32L32, (string)NV12_16L32S, (string)Y41B, (string)IYU1, (string)YVU9, (string)YUV9, (string)RGB16, (string)BGR16, (string)RGB15, (string)BGR15, (string)RGB8P, (string)GRAY16_LE, (string)GRAY16_BE, (string)GRAY10_LE32, (string)GRAY8 }
+                  width: [ 1, 32767 ]
+                 height: [ 1, 32767 ]
+              framerate: [ 0/1, 2147483647/1 ]
+      video/x-raw(ANY)
+                 format: { (string)ABGR64_LE, (string)BGRA64_LE, (string)AYUV64, (string)ARGB64_LE, (string)ARGB64, (string)RGBA64_LE, (string)ABGR64_BE, (string)BGRA64_BE, (string)ARGB64_BE, (string)RGBA64_BE, (string)GBRA_12LE, (string)GBRA_12BE, (string)Y412_LE, (string)Y412_BE, (string)A444_10LE, (string)GBRA_10LE, (string)A444_10BE, (string)GBRA_10BE, (string)A422_10LE, (string)A422_10BE, (string)A420_10LE, (string)A420_10BE, (string)RGB10A2_LE, (string)BGR10A2_LE, (string)Y410, (string)GBRA, (string)ABGR, (string)VUYA, (string)BGRA, (string)AYUV, (string)ARGB, (string)RGBA, (string)A420, (string)AV12, (string)Y444_16LE, (string)Y444_16BE, (string)v216, (string)P016_LE, (string)P016_BE, (string)Y444_12LE, (string)GBR_12LE, (string)Y444_12BE, (string)GBR_12BE, (string)I422_12LE, (string)I422_12BE, (string)Y212_LE, (string)Y212_BE, (string)I420_12LE, (string)I420_12BE, (string)P012_LE, (string)P012_BE, (string)Y444_10LE, (strin:
+
+64_BE, (string)BGRA64_BE, (string)ARGB64_BE, (string)RGBA64_BE, (string)GBRA_12LE, (stri
+E, (string)Y410, (string)GBRA, (string)ABGR, (string)VUYA, (string)BGRA, (string)AYUV, (string)ARGB, (string)RGBA, (string)A420, (string)AV12, (string)Y444_16LE, (string)Y444_16BE, (string)v216, (string)P016_LE, (string)P016_BE, (string)Y444_12LE, (string)GBR_12LE, (string)Y444_12BE, (string)GBR_12BE, (string)I422_12LE, (string)I422_12BE, (string)Y212_LE, (string)Y212_BE, (string)I420_12LE, (string)I420_12BE, (string)P012_LE, (string)P012_BE, (string)Y444_10LE, (string)GBR_10LE, (string)Y444_10BE, (string)GBR_10BE, (string)r210, (string)I422_10LE, (string)I422_10BE, (string)NV16_10LE32, (string)Y210, (string)v210, (string)UYVP, (string)I420_10LE, (string)I420_10BE, (string)P010_10LE, (string)NV12_10LE32, (string)NV12_10LE40, (string)P010_10BE, (string)NV12_10BE_8L128, (string)Y444, (string)RGBP, (string)GBR, (string)BGRP, (string)NV24, (string)xBGR, (string)BGRx, (string)xRGB, (string)RGBx, (string)BGR, (string)IYU2, (string)v308, (string)RGB, (string)Y42B, (string)NV61, (string)NV16, (string)VYUY, (string)UYVY, (string)YVYU, (string)YUY2, (string)I420, (string)YV12, (string)NV21, (string)NV12, (string)NV12_8L128, (string)NV12_64Z32, (string)NV12_4L4, (string)NV12_32L32, (string)NV12_16L32S, (string)Y41B, (string)IYU1, (string)YVU9, (string)YUV9, (string)RGB16, (string)BGR16, (string)RGB15, (string)BGR15, (string)RGB8P, (string)GRAY16_LE, (string)GRAY16_BE, (string)GRAY10_LE32, (string)GRAY8 }
+                  width: [ 1, 32767 ]
+                 height: [ 1, 32767 ]
+              framerate: [ 0/1, 2147483647/1 ]
+
+Element has no clocking capabilities.
+Element has no URI handling capabilities.
+
+Pads:
+  SINK: 'sink'
+    Pad Template: 'sink'
+  SRC: 'src'
+    Pad Template: 'src'
+
+Element Properties:
+  add-borders         : Add black borders if necessary to keep the display aspect ratio
+                        flags: readable, writable
+                        Boolean. Default: true
+  alpha-mode          : Alpha Mode to use
+                        flags: readable, writable
+                        Enum "GstVideoAlphaMode" Default: 0, "copy"
+                           (0): copy             - GST_VIDEO_ALPHA_MODE_COPY
+                           (1): set              - GST_VIDEO_ALPHA_MODE_SET
+                           (2): mult             - GST_VIDEO_ALPHA_MODE_MULT
+  alpha-value         : Alpha Value to use
+                        flags: readable, writable
+                        Double. Range:               0 -               1 Default:               1 
+  chroma-mode         : Chroma Resampling Mode
+                        flags: readable, writable
+                        Enum "GstVideoChromaMode" Default: 0, "full"
+                           (0): full             - GST_VIDEO_CHROMA_MODE_FULL
+                           (1): upsample-only    - GST_VIDEO_CHROMA_MODE_UPSAMPLE_ONLY
+                           (2): downsample-only  - GST_VIDEO_CHROMA_MODE_DOWNSAMPLE_ONLY
+                           (3): none             - GST_VIDEO_CHROMA_MODE_NONE
+  chroma-resampler    : Chroma resampler method
+                        flags: readable, writable
+                        Enum "GstVideoResamplerMethod" Default: 1, "linear"
+                           (0): nearest          - GST_VIDEO_RESAMPLER_METHOD_NEAREST
+                           (1): linear           - GST_VIDEO_RESAMPLER_METHOD_LINEAR
+                           (2): cubic            - GST_VIDEO_RESAMPLER_METHOD_CUBIC
+                           (3): sinc             - GST_VIDEO_RESAMPLER_METHOD_SINC
+                           (4): lanczos          - GST_VIDEO_RESAMPLER_METHOD_LANCZOS
+  dither              : Apply dithering while converting
+                        flags: readable, writable
+                        Enum "GstVideoDitherMethod" Default: 4, "bayer"
+dither-quantization : Quantizer to use
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 4294967295 Default: 1 
+  envelope            : Size of filter envelope
+                        flags: readable, writable
+                        Double. Range:               1 -               5 Default:               2 
+  gamma-mode          : Gamma Conversion Mode
+                        flags: readable, writable
+                        Enum "GstVideoGammaMode" Default: 0, "none"
+                           (0): none             - GST_VIDEO_GAMMA_MODE_NONE
+                           (1): remap            - GST_VIDEO_GAMMA_MODE_REMAP
+  matrix-mode         : Matrix Conversion Mode
+                        flags: readable, writable
+                        Enum "GstVideoMatrixMode" Default: 0, "full"
+                           (0): full             - GST_VIDEO_MATRIX_MODE_FULL
+                           (1): input-only       - GST_VIDEO_MATRIX_MODE_INPUT_ONLY
+                           (2): output-only      - GST_VIDEO_MATRIX_MODE_OUTPUT_ONLY
+                           (3): none             - GST_VIDEO_MATRIX_MODE_NONE
+  method              : method
+                        flags: readable, writable
+                        Enum "GstVideoScaleMethod" Default: 1, "bilinear"
+                           (0): nearest-neighbour - Nearest Neighbour
+                           (1): bilinear         - Bilinear (2-tap)
+                           (2): 4-tap            - 4-tap Sinc
+                           (3): lanczos          - Lanczos
+                           (4): bilinear2        - Bilinear (multi-tap)
+                           (5): sinc             - Sinc (multi-tap)
+                           (6): hermite          - Hermite (multi-tap)
+                           (7): spline           - Spline (multi-tap)
+                           (8): catrom           - Catmull-Rom (multi-tap)
+                           (9): mitchell         - Mitchell (multi-tap)
+  n-threads           : Maximum number of threads to use
+                        flags: readable, writable
+                        Unsigned Integer. Range: 0 - 4294967295 Default: 1 
+  name                : The name of the object
+                        flags: readable, writable
+                        String. Default: "videoconvert0"
+  parent              : The parent of the object
+                        flags: readable, writable
+                        Object of type "GstObject"
+  primaries-mode      : Primaries Conversion Mode
+                        flags: readable, writable
+                        Enum "GstVideoPrimariesMode" Default: 0, "none"
+                           (0): none             - GST_VIDEO_PRIMARIES_MODE_NONE
+                           (1): merge-only       - GST_VIDEO_PRIMARIES_MODE_MERGE_ONLY
+                           (2): fast             - GST_VIDEO_PRIMARIES_MODE_FAST
+  qos                 : Handle Quality-of-Service events
+                        flags: readable, writable
+                        Boolean. Default: true
+  sharpen             : Sharpening
+                        flags: readable, writable
+                        Double. Range:               0 -               1 Default:               0 
+  sharpness           : Sharpness of filter
+                        flags: readable, writable
+                        Double. Range:             0.5 -             1.5 Default:               1 
+(END)
+
+
+:
+
+
